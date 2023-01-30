@@ -13,4 +13,4 @@ jobs:
           command:composer install
       - uses: php-actions/phpunit@v3
         with:
-          configuration: ./vendor/bin/phpunit ./src/tests/Unit/UserTest.php
+          configuration: ./phpunit.xml
