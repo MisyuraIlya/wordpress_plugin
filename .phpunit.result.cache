@@ -1,1 +1,1 @@
-{"version":1,"defects":{"App\\User\\UserTest::testClassConstructor":4},"times":{"App\\User\\UserTest::testClassConstructor":0.006,"UserTest::testClassConstructor":0.017}}
+{"version":1,"defects":{"App\\User\\UserTest::testClassConstructor":4},"times":{"App\\User\\UserTest::testClassConstructor":0.006,"UserTest::testClassConstructor":0.001,"CalculatorTest::testAddOperation":0.006,"CalculatorTest::testSubtractOperation":0}}
