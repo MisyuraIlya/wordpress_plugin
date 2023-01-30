@@ -15,4 +15,4 @@ jobs:
       - name: checkFolder
         run: ls
       - name: PHPUnit Tests
-        run:  vendor/bin/phpunit ./src/tests/Unit/UserTest.php
+        run:  sudo vendor/bin/phpunit ./src/tests/Unit/UserTest.php
