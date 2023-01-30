@@ -13,6 +13,6 @@ jobs:
         run: composer install
 
       - name: checkFolder
-        run: ls
+        run: ls vendor/bin
       - name: PHPUnit Tests
         run:  sudo vendor/bin/phpunit ./src/tests/Unit/UserTest.php
