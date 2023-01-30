@@ -1,4 +1,5 @@
-name: CI
+
+name: CI-old-php
 
 on: [push]
 
@@ -9,10 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: install composer
-        run: composer install
+      - uses: php-actions/composer@v6
 
-      - name: checkFolder
-        run: ls vendor/bin
       - name: PHPUnit Tests
-        run:  vendor/bin/phpunit src/tests/Unit/UserTest.php
+        uses: php-actions/phpunit@v3
+        env:
+          TEST_NAME: Scarlett
+        with:
+          bootstrap: vendor/autoload.php
+          configuration: test/phpunit.xml
+          args: --coverage-text
+          php_version: "7.3"
