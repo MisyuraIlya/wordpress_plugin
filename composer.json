@@ -1,9 +1,5 @@
 {
-	"require": {
-		"guzzlehttp/guzzle": "^7.0",
-      	"ext-simplexml": "*",
-      	"ext-soap": "*"
-    },
+
 	"name": "july/api_plugin",
 	"autoload": {
 		"psr-4": {
