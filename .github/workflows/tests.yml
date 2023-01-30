@@ -15,10 +15,4 @@ jobs:
       - name: checkFolder
         run: ls
       - name: PHPUnit Tests
-        uses: php-actions/phpunit@master
-        env:
-          TEST_NAME: Scarlett
-        with:
-          bootstrap: vendor/autoload.php
-          configuration: test/phpunit.xml
-          args: --coverage-text
+        run:  vendor/bin/phpunit ./src/tests/Unit/UserTest.php
