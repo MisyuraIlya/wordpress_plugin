@@ -13,5 +13,3 @@ jobs:
           dev: no
           args: --profile --ignore-platform-reqs
       - uses: php-actions/phpunit@v3
-        with:
-          configuration: ./phpunit.xml
