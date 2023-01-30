@@ -13,4 +13,4 @@ jobs:
           dev: no
           args: --profile --ignore-platform-reqs
       - name: phpunit
-        run:  vendor/bin/phpunit ./src/tests/Unit/UserTest.php
+        run:  vendor/bin/phpunit tests
